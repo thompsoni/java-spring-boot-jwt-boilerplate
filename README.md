@@ -141,5 +141,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - Java 21 Spring Boot 3 JWT boilerplate
 
 ## Support the Dev:
-BTC: bc1qpftdtjggrq8dpa6x6x7dnqvgv7ttc2x2m8rgvy
-ETH / POL / BNB: 0xdCC9f5281B8bb40B11A792C280aA2cdd434C34AF
+- BTC: bc1qpftdtjggrq8dpa6x6x7dnqvgv7ttc2x2m8rgvy
+- ETH / POL / BNB: 0xdCC9f5281B8bb40B11A792C280aA2cdd434C34AF
