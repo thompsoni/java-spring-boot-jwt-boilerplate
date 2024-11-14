@@ -1,4 +1,4 @@
-# Spring Boot 3 JWT Authentication Maven Boilerplate
+# Java Spring Boot 3 JWT Authentication Maven Boilerplate
 
 This repository provides a Java Spring Boot 3.3.5 Maven boilerplate, featuring a JWT authentication, role-based access control, PostgreSQL integration and Docker setup.
 The project also includes basic AI image classification using the Deep Java Library (DJL), making it ideal for rapid development of secure, AI-enabled web applications.
