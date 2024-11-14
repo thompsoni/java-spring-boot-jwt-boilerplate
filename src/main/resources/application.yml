@@ -1,0 +1,46 @@
+spring:
+  devtools:
+    restart:
+      enabled: true         # Enable automatic restart (default is true)
+      poll-interval: 1000ms # Poll interval for changes (default is 1s)
+    livereload:
+      enabled: true         # Enable live reload (default is true)
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/java-spring-boot}
+    username: ${JDBC_DATABASE_USERNAME:postgres}
+    password: ${JDBC_DATABASE_PASSWORD:mypassword}
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        id:
+          new_generator_mappings: true
+  docker:
+    compose:
+      lifecycle-management: start-only
+jwt:
+  secret: skG91dM0QEPyhAkNWRqNwUMwW7in+o2reC6w7O12MSePeu7mSYOcej+R9NMUoFe1upxNmS669+7OQYsMBcZYhQ== # HS512
+  expiration: 3600000  # 1 hour in milliseconds
+error:
+  handling:
+    http-status-in-json-response: true
+    exception-logging: NO_LOGGING
+    full-stacktrace-http-statuses: 5xx
+    log-levels:
+      5xx: ERROR
+springdoc:
+  pathsToMatch: /
+logging:
+  level:
+    org.springframework: ERROR
+server:
+  error:
+    include-stacktrace: never

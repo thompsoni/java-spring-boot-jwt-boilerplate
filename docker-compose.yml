@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:17.0
+    environment:
+    - POSTGRES_DB=java-spring-boot
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=P4ssword!
+    ports:
+    - 5433:5432
